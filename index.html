@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Sharing Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🎥 Video Sharing Platform</h1>
+    <nav>
+      <button id="themeToggle">🌙 Dark Mode</button>
+      <a href="#" id="loginBtn">Login</a>
+      <a href="#" id="signupBtn">Sign Up</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="videoSection">
+      <h2>📺 Uploaded Videos</h2>
+      <div id="videoList"></div>
+    </section>
+
+    <section id="uploadSection">
+      <h2>📤 Upload Your Video</h2>
+      <form id="uploadForm">
+        <input type="file" id="videoFile" accept="video/*" required>
+        <button type="submit">Upload</button>
+      </form>
+    </section>
+  </main>
+
+  <div id="adModal" class="modal">
+    <div class="modal-content">
+      <span id="closeAdModal">&times;</span>
+      <p>Watch this ad to continue...</p>
+      <iframe id="adFrame" src="https://example.com/ad"></iframe>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
